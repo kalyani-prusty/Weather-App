@@ -1,0 +1,103 @@
+/* src/App.css */
+body {
+  background-image: url('https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726444800&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures full viewport coverage */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Apply font globally */
+  color: #333; /* Default text color for better contrast */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.weather-container {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a modern look */
+  border-radius: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight input on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%; /* Adjust width to fit side by side */
+  margin-right: 2%; /* Space between buttons */
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+.reset-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%; /* Same width as search button for consistency */
+  margin-left: 2%; /* Space between buttons */
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}
+.weather-info {
+  margin-top: 0px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5; /* Improve readability */
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center; /* Center align error messages */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .weather-container {
+    padding: 15px;
+  }
+  button, 
+  .reset-button {
+    width: 100%; /* Full width for small screens */
+    margin: 5px 0; /* Add space between buttons */
+  }
+}
